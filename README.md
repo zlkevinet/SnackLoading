@@ -190,8 +190,9 @@ class DataView extends AbsLoadingView {
 
 ### 后续计划
 
-1. 缓存相同的Loading显示展示过程，避免每次对ViewTree进行刷新 ->1.1.0
-2. 整体提取公共Render参数 ->1.1.0
-3. 阻塞式Loading增加margin和padding参数 ->1.1.0
-4. 阻塞式Loading跟随Fallback变化 ->1.1.1
-5. 支持进度控制动画 ->1.1.1
+1. 增加margin和padding参数 ->1.0.2
+2. 缓存相同的Loading显示展示过程，避免每次对ViewTree进行刷新 ->1.0.2
+3. 阻塞式Loading跟随Fallback变化 ->1.0.4
+4. 整体提取公共Render参数 ->1.0.6
+5. 优化重构Render资源和结构 ->1.0.8
+6. 支持进度控制动画 ->1.1.0
