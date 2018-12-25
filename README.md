@@ -2,6 +2,12 @@
 
 ### 引入方式
 ```
+repositories {
+	maven {
+		url  "https://entropy.bintray.com/library"
+	}
+}
+
 dependencies {
     implementation 'com.entropy.lu:snack-loading:1.0.0'
 }
