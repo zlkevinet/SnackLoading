@@ -3,9 +3,9 @@
 ### 引入方式
 ```
 repositories {
-	maven {
-		url  "https://entropy.bintray.com/library"
-	}
+    maven {
+        url  "https://entropy.bintray.com/library"
+    }
 }
 
 dependencies {
@@ -26,14 +26,8 @@ dependencies {
 3. 挂靠View的父类只能是FrameLayout、ConstraintLayout、RelativeLayout
 
 ### 版本历史
-##### v1.1.x-dev
-- 支持LifeCycle生命周期控制
-- 支持按钮上Loading
-- 支持Gravity.Center
-- 增加Margin和Padding的调整
-- 阻塞式Loading跟随Fallback高度变化而变化
 
-##### v1.0.x
+##### v1.0.0
 - 定义Loading的基础业务接入层
 - 定义ILoadingable的抽象接口层，提供业务层调用
 - 从ILoadingable接口分离出ILoadingHolder
@@ -43,6 +37,7 @@ dependencies {
 - 支持挂靠式自动绑定位置
 - 支持非阻塞和阻塞操作
 - 支持Lottie动画库
+- 支持LifeCycle生命周期控制
 
 ### Loading类型
 
@@ -195,9 +190,8 @@ class DataView extends AbsLoadingView {
 
 ### 后续计划
 
-1. 缓存相同的Loading显示展示过程，避免每次对ViewTree进行刷新
-2. 支持MaskLayer的自定义背景色和样式
-3. 整体提取公共Render参数
-4. 阻塞式Loading增加margin和padding参数
-5. 阻塞式Loading跟随Fallback变化
-6. 增加生命周期控制
+1. 缓存相同的Loading显示展示过程，避免每次对ViewTree进行刷新 ->1.1.0
+2. 整体提取公共Render参数 ->1.1.0
+3. 阻塞式Loading增加margin和padding参数 ->1.1.0
+4. 阻塞式Loading跟随Fallback变化 ->1.1.1
+5. 支持进度控制动画 ->1.1.1
